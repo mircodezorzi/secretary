@@ -2,4 +2,4 @@
 
 #include <string_view>
 
-std::string_view hello_world = "Hello, World";
+constexpr std::string_view hello_world = "Hello, World";

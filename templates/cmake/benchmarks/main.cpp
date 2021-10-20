@@ -7,6 +7,6 @@ static void HelloWorld(benchmark::State& state) {
     fmt::print("Hello, World!");
   }
 }
-BENCHMARK(HelloWord);
+BENCHMARK(HelloWorld);
 
 BENCHMARK_MAIN();
