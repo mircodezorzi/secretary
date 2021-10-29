@@ -1,6 +1,6 @@
 # `secretary`
 
-C/C++/Python scaffolding.
+Python scaffolding framework.
 
 # Usage
 ```bash
