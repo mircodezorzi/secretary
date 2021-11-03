@@ -2,7 +2,7 @@ import subprocess
 import shutil
 
 
-def run_shell(cmd: list[str], cwd: str = "", silent: bool = True) -> None:
+def run_shell(cmd: list[str], cwd: str = "", silent: bool = False) -> None:
     """Run command silently."""
     if silent:
         subprocess.call(
@@ -24,8 +24,8 @@ def replace(pattern: str, repl: str, path: str) -> None:
     )
 
 
-def copy(src: str, dst: str):
-    shutil.copytree(src, dst)
+def copy(src: str, dst: str, symlinks: bool = False, ignore: bool = None):
+    shutil.copytree(src, dst, symlinks, ignore)
 
 
 def remove(path: str):
